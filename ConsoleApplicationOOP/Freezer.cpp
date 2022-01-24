@@ -54,6 +54,7 @@ void Freezer::fillProperties(int cam, int weight) {
 void Freezer::fillProperties(int cam, int weight, string newVal) {
     _cameras = cam;
     _weight = weight;
+    _newProperty = newVal;
 }
 
 int Freezer::getCameras() {
