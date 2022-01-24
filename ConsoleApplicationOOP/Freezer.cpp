@@ -28,17 +28,17 @@ Freezer::Freezer(int id, int price, string name, string description) :
 
 Freezer::Freezer(int id, int price, string name, string description, int cam) :
     GoodBasic{ id, price, name, description } {
-    fillProperties(2, 5);
+    fillProperties(cam, 5);
 }
 
 Freezer::Freezer(int id, int price, string name, string description, int cam, int weight) :
     GoodBasic{ id, price, name, description } {
-    fillProperties(2, 5);
+    fillProperties(cam, weight);
 }
 
 Freezer::Freezer(int id, int price, string name, string description, int cam, int weight, string newValue) :
     GoodBasic{ id, price, name, description } {
-    fillProperties(2, 5);
+    fillProperties(cam, weight, newValue);
 }
 
 
