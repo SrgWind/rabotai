@@ -90,3 +90,6 @@ void Freezer::printString(string dataToPrint) {
 void Freezer::toString() {
     cout << "toString inside FreezeOld: id" << getItemId() << " Price:" << getPrice() << " Name:" << getName() << " Descr:" << getDescription() << " Sections:" << getCameras() << " Weight:" << getWeight() << "\n";
 }
+Freezer::~Freezer() {
+    delete[] _charName;
+}

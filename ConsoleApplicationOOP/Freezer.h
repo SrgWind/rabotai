@@ -7,6 +7,7 @@ private:
     int _cameras;
     int _weight;
     string _newProperty;
+    char _charName;
 public:
     Freezer();
     Freezer(int id);
@@ -16,6 +17,7 @@ public:
     Freezer(int id, int price, string name, string description, int cam);
     Freezer(int id, int price, string name, string description, int cam, int weight);
     Freezer(int id, int price, string name, string description, int cam, int weight, string newValue);
+    Freezer(char *nameChar);
 
 
     void fillProperties(int cam, int weight);
